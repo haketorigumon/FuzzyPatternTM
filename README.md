@@ -2,6 +2,12 @@
 
 A paradigm shift in the Tsetlin Machine family of algorithms.
 
+### 📌 Note
+
+This repository contains the reference implementation.  
+A faster and more optimized version is available here:  
+🚀 https://github.com/BooBSD/Tsetlin.jl
+
 ## Abstract
 
 The "*all-or-nothing*" clause evaluation strategy is a core mechanism in the Tsetlin Machine (TM) family of algorithms. In this approach, each clause—a logical pattern composed of binary literals mapped to input data—is disqualified from voting if even a single literal fails. Due to this strict requirement, standard TMs must employ thousands of clauses to achieve competitive accuracy. This paper introduces the **Fuzzy-Pattern Tsetlin Machine** (FPTM), a novel variant where clause evaluation is fuzzy rather than strict. If some literals in a clause fail, the remaining ones can still contribute to the overall vote with a proportionally reduced score. As a result, each clause effectively consists of sub-patterns that adapt individually to the input, enabling more flexible, efficient, and robust pattern matching. The proposed fuzzy mechanism significantly reduces the required number of clauses, memory footprint, and training time, while simultaneously improving accuracy.
